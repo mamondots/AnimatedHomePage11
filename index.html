@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/910ce80589.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>animated webdesign</title>
+</head>
+<body>
+    <div class="container">
+       <div class="title-head">
+         <p>It's the last day to save. The skills for now - now on sale.</p>
+       </div>
+       <header>
+         <div class="logo">
+           <a href="">mamondots</a>
+         </div>
+         <div class="menu">
+           <ul>
+             <li><a href="">home</a></li>
+             <li><a href="">courses</a></li>
+             <li><a href="">instructor registration</a></li>
+             <li><a href="">student registration</a></li>
+           </ul>
+         </div>
+         <div class="btn-section">
+            <button class="btn01"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="btn02">get started</button>
+         </div>
+       </header>
+       <div class="content">
+         <div class="content-info">
+           <h1>Start learning <br>from our top <br>experts.</h1>
+           <p>
+             Unlock your potential with unlimited short<br> 
+             courses & earm certificates to boost your CV.
+           </p>
+           <div class="content-btn">
+             <button class="btn-01">explore all courses <i class="fa-solid fa-arrow-right"></i></button>
+             <button class="btn-02">join for free now</button>
+           </div>
+           <div class="exta-img">
+              <img src="img/eLearning-Shape-2.webp">
+           </div>
+         </div>
+         <div class="img-content">
+            <div class="main-img">
+               <img src="img/eLearning-Hero-Image.webp">
+            </div>
+            <div class="boxes">
+               <div class="box box1">
+                 <span>120K+</span>
+                 <P>Online Videos</P>
+               </div>
+
+               <div class="box box2">
+                <span>200+</span>
+                <P>Categories</P>
+              </div>
+
+              <div class="box box3">
+                <img src="img/eLearning-Hero-Image-2.webp">
+                <P>120K+ Categories</P>
+              </div>
+
+            </div>
+         </div>
+       </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+       let animation = anime({
+        targets:'.logo',
+        translateX:[-40,0],
+        opacity:[0,1],
+        duration:800,
+        easing:'easeInOutSine',
+       });
+
+       anime({
+        targets:'.menu',
+        translateX:[-80,0],
+        opacity:[0,1],
+        duration:800,
+        easing:'easeInOutSine',
+        delay:300,
+       });
+
+       anime({
+        targets:'.btn-section',
+        translateX:[-80,0],
+        opacity:[0,1],
+        duration:800,
+        easing:'easeInOutSine',
+        delay:500,
+       });
+
+       anime({
+        targets:'.content-info h1',
+        translateX:[-40,0],
+        opacity:[0,1],
+        duration:800,
+        easing:'easeInOutSine',
+        delay:700,
+       });
+
+       anime({
+        targets:'.content-info p',
+        translateX:[40,0],
+        opacity:[0,1],
+        duration:800,
+        easing:'easeInOutSine',
+        delay:800,
+       });
+
+       anime({
+        targets:'.content-btn',
+        translateX:[-40,0],
+        opacity:[0,1],
+        duration:800,
+        easing:'easeInOutSine',
+        delay:700,
+       });
+
+       anime({
+        targets:'.exta-img',
+        translateY:[-40,0],
+        opacity:[0,1],
+        duration:800,
+        easing:'easeInOutSine',
+        delay:800,
+       });
+
+       anime({
+        targets:'.main-img',
+        translateY:[100,0],
+        opacity:[0,1],
+        duration:800,
+        easing:'easeInOutSine',
+        delay:800,
+       });
+
+       anime({
+        targets:'.boxes .box1',
+        translateX:[-50,0],
+        opacity:[0,1],
+        duration:800,
+        easing:'easeInOutSine',
+        delay:800,
+       });
+
+       anime({
+        targets:'.boxes .box2',
+        translateX:[50,0],
+        opacity:[0,1],
+        duration:800,
+        easing:'easeInOutSine',
+        delay:800,
+       });
+
+       anime({
+        targets:'.boxes .box3',
+        translateY:[-50,0],
+        opacity:[0,1],
+        duration:800,
+        easing:'easeInOutSine',
+        delay:800,
+       });
+    </script>
+</body>
+</html>
